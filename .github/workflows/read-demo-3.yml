@@ -1,0 +1,14 @@
+name: Reading Demo 3
+ 
+on:
+  push:
+  workflow_dispatch:
+ 
+jobs:
+  whoami:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say hello
+        run: echo "Hello from the workflow"
+      - name: Who triggered this
+        run: echo "Triggered by ${{ github.actor }}"

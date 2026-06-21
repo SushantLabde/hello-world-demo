@@ -1,0 +1,18 @@
+name: Reading Demo 2
+ 
+on:
+  push:
+  workflow_dispatch:
+ 
+jobs:
+  greetings:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get the code
+        uses: actions/checkout@v4
+      - name: Step one
+        run: echo "Step one - starting"
+      - name: Step two
+        run: echo "Step two - working"
+      - name: Step three
+        run: echo "Step three - done"
